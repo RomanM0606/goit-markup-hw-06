@@ -564,11 +564,12 @@ margin-bottom: 16px;
   align-items: center;
   justify-content: center;
   padding: 8px 24px;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04;
   color: #FFFFFF; 
   background-color: #4D5AE5;
   border-radius: 4px;
@@ -879,7 +880,6 @@ flex-basis: calc(100%-24px*2)/3;
 }
 
 .contact-form-checkbox-wrapper {
-  display: flex;
   align-items: center;
   gap: 8px;
   font-family: 'Roboto';
@@ -921,15 +921,8 @@ flex-basis: calc(100%-24px*2)/3;
   transition: outline var(--transition-dur-and-func), ackground-color var(--transition-dur-and-func);
 }
 
-.contact-form-checkmark-icon {
-  opacity: 0;
-}
 
-.contact-form-checkbox:checked + .contact-form-own-checkbox > .contact-form-checkmark-icon {
-  opacity: 1; 
-}
-
-.contact-form-checkbox:checked + .contact-form-own-checkbox {
+.contact-form-checkbox:checked + .contact-form-checkbox-wrapper .contact-form-own-checkbox  {
   background-color: #404BBF;
   border: none;
   fill: #FFFFFF;
