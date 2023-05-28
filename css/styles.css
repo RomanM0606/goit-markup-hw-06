@@ -527,11 +527,15 @@ margin-bottom: 16px;
 }
 
 .footer-subsckribe-input {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   display: flex;
   align-items: center;
   padding-left: 16px;
   width: 264px;
   height: 40px;
+  color: #FFFFFF;
   border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -539,11 +543,11 @@ margin-bottom: 16px;
 }
 
 .footer-subsckribe-input::placeholder {
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 1.5;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
@@ -787,11 +791,15 @@ flex-basis: calc(100%-24px*2)/3;
   padding-left: 38px;
   width: 100%;
   height: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04;
   outline: transparent;
   border-color: transparent;
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: border var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func);
 }
 
 .contact-form-icon {
@@ -816,8 +824,7 @@ flex-basis: calc(100%-24px*2)/3;
   fill: #4D5AE5;
 }
 
-.contact-form-field-descr,
-.textarea-wrapper {
+.contact-form-field-descr {
   display: block;
   margin-bottom: 4px;
   font-family: 'Roboto';
@@ -848,6 +855,7 @@ flex-basis: calc(100%-24px*2)/3;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
+  outline: transparent;
   transition: border-color var(--transition-dur-and-func);
 }
 
@@ -895,10 +903,9 @@ flex-basis: calc(100%-24px*2)/3;
 }
 
 .contact-form-checkbox {
-  appearance: none;
-  position: absolute; 
+  /*appearance: none;
+  position: absolute;*/
 }
-
 
 .contact-form-own-checkbox {
   display: inline-flex;
@@ -918,21 +925,20 @@ flex-basis: calc(100%-24px*2)/3;
   opacity: 0;
 }
 
-.contact-form-checkbox:focus + .contact-form-own-checkbox {
-  outline: 1px solid #404BBF;
-}
-
 .contact-form-checkbox:checked + .contact-form-own-checkbox > .contact-form-checkmark-icon {
   opacity: 1; 
 }
 
 .contact-form-checkbox:checked + .contact-form-own-checkbox {
   background-color: #404BBF;
+  border: none;
+  fill: #FFFFFF;
+  border-color: #404bbf;
 }
 
 
 .modal-form-submit {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
