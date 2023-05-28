@@ -880,8 +880,6 @@ flex-basis: calc(100%-24px*2)/3;
 }
 
 .contact-form-checkbox-wrapper {
-  display: inline-flex;
-  gap: 8px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -895,6 +893,7 @@ flex-basis: calc(100%-24px*2)/3;
 }
 
 .privacy-policy-link {
+  margin-left: 4px;
   text-decoration-line: underline;
   color: #4D5AE5;
   flex: none;
@@ -911,6 +910,7 @@ flex-basis: calc(100%-24px*2)/3;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   fill: transparent;
   width: 16px;
   height: 16px;
