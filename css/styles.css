@@ -474,6 +474,7 @@ img {
 .social-links-footer {
  width: 208px;
  height: 80px;
+ margin-right: 80px;
 }
 
 .social-links-footer-title {
@@ -506,14 +507,8 @@ margin-bottom: 16px;
   background-color: #31D0AA;
 }
 
-.footer-subsckribe {
-  display: flex;
-}
-
-.footer-subsckribe-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-left: 80px;
+.footer-subsckribe-form {
+  display: flex; 
 }
 
 .footer-user-subscribe {
@@ -527,7 +522,9 @@ margin-bottom: 16px;
   color: #FFFFFF;
 }
 
-
+.footer-subsckribe-form-field {
+  margin-right: 24px;
+}
 
 .footer-subsckribe-input {
   display: flex;
@@ -553,15 +550,16 @@ margin-bottom: 16px;
   color: #FFFFFF;
 }
 
-.user-subscribe-bottom {
+.send-icon {
+  margin-left: 16px;
+}
+
+.user-subscribe-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  margin-left: 24px;
   padding: 8px 24px;
-  gap: 16px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -570,7 +568,8 @@ margin-bottom: 16px;
   color: #FFFFFF; 
   background-color: #4D5AE5;
   border-radius: 4px;
-  width: 165px;
+  border: none;
+  min-width: 165px;
   height: 40px;
   transition: background-color var(--transition-dur-and-func);
 }
@@ -717,7 +716,7 @@ flex-basis: calc(100%-24px*2)/3;
   width: 408px;
   height: 584px;
   min-height: 576px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   background-color: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -766,7 +765,6 @@ flex-basis: calc(100%-24px*2)/3;
 }
 
 .contact-form-title {
-  margin-top: 48px;
   margin-bottom: 16px;
   font-family: 'Roboto';
   font-style: normal;
@@ -789,6 +787,8 @@ flex-basis: calc(100%-24px*2)/3;
   padding-left: 38px;
   width: 100%;
   height: 40px;
+  outline: transparent;
+  border-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: border var(--transition-dur-and-func);
@@ -799,7 +799,12 @@ flex-basis: calc(100%-24px*2)/3;
   position: absolute;
   top: 50%;
   left: 16px;
+  transform: translateY(-50%);
   transition: fill var(--transition-dur-and-func);
+}
+
+.contact-form-input-wrapper {
+  position: relative;
 }
 
 .contact-form-input:focus {
@@ -819,9 +824,13 @@ flex-basis: calc(100%-24px*2)/3;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
+}
+
+.user-comment {
+  margin-bottom: 16px;
 }
 
 .contact-form-message {
@@ -829,9 +838,17 @@ flex-basis: calc(100%-24px*2)/3;
   height: 120px;
   resize: none;
   padding: 8px 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
-  transition: border var(--transition-dur-and-func);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color var(--transition-dur-and-func);
 }
 
 .contact-form-message:focus {
@@ -844,9 +861,13 @@ flex-basis: calc(100%-24px*2)/3;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
 }
 
 .contact-form-checkbox-wrapper {
@@ -857,7 +878,7 @@ flex-basis: calc(100%-24px*2)/3;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
   flex: none;
@@ -875,10 +896,17 @@ flex-basis: calc(100%-24px*2)/3;
 
 .contact-form-checkbox {
   appearance: none;
-  position: absolute;
+  position: absolute; 
 }
 
+
 .contact-form-own-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
