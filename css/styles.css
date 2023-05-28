@@ -880,6 +880,7 @@ flex-basis: calc(100%-24px*2)/3;
 }
 
 .contact-form-checkbox-wrapper {
+  display: flex;
   align-items: center;
   gap: 8px;
   font-family: 'Roboto';
